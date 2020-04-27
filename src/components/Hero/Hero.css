@@ -1,0 +1,99 @@
+.header {
+  background-image: url('./bec3f96e-5e03-44b9-b6b0-a215df0fe213.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 56px);
+}
+
+#tagLineContainer {
+  background-image: url('./96456648-shiny-yellow-leaf-gold-foil-texture-background.jpg');
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+}
+
+#tagline {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: #ffe6e6;
+  padding: 2rem;
+  margin: 1rem;
+  letter-spacing: 10px;
+  text-shadow: 0 0 100px #000 !important;
+}
+
+#tagline h1,
+h3 {
+  margin: 0.5rem;
+}
+
+/* vertical mobile display */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.myButton {
+  margin-top: 50px;
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+  border-radius: 5px;
+  background-color: #6c7b68;
+	display:inline-block;
+	cursor:pointer;
+	color: #ffe6e6;
+	font-size:32px;
+	padding:12px 16px;
+	text-decoration:none;
+}
+.myButton:hover {
+  background-color: #5C6659;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.modalButton {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+  border-radius: 5px;
+  background-color: #6c7b68;
+	display:inline-block;
+	cursor:pointer;
+	color: #ffe6e6;
+	font-size:18px;
+	padding:6px 16px;
+	text-decoration:none;
+}
+.modalButton:hover {
+  background-color: #5C6659;
+}
+.modalButton:active {
+	position:relative;
+	top:1px;
+}
+
+.checkBoxInput[type="checkbox"]:not(:checked){
+  display: inline;
+}
+
+.checkBoxInput[type="checkbox"]:checked{
+  display: inline;
+}
+
+.checkBoxLabel {
+  min-width: 200px;
+}
+
+
+        
+

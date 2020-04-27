@@ -1,0 +1,70 @@
+{
+  "loginpage": {
+    "title": "Login",
+    "intro": "To access our website, register with your email and password. If you have already registered, please login.",
+    "placeholderName": "Username",
+    "placeholderEmail": "Email address",
+    "loginbutton": "Login →",
+    "signupbutton": "Create new user →"
+  },
+  "hero": {
+    "weddingwebsite": "November 7th 2020",
+    "locationwedding": "Tulum, MX"
+  },
+  "navbar": {
+    "RSVP": "RSVP",
+    "contactus": "Contact Us",
+    "gifts": "Registry"
+  },
+
+  "location": {
+    "introduction": "Some more information about the city where we are getting married, the location of the wedding and what to visit",
+    "cerimonia": "Both the wedding ceremony and the reception will take place at....",
+    "address": "Address",
+    "mapsuggestions": "Map...",
+    "plane": "Friday, November 6th, 2020",
+    "car": "Saturday, November 7th, 2020",
+    "train": "Sunday, November 8th, 2020",
+    "planedescription1": "Check back soon",
+    "planedescription2": "",
+    "planedescription3": "",
+    "cardescription": "Check back soon",
+    "traindescription": "Check back soon",
+    "traindescription2": ""
+  },
+  "RSVP": {
+    "title": "R.S.V.P.",
+    "fieldAttendance": "* Can you make it?",
+    "headerExplain": "Please complete the form below to let us know if you can make it to the wedding.",
+    "header": "RSVP",
+    "thanks": "Thanks for your RSVP. Please let us know if there are any changes at least two weeks before the wedding.",
+    "fieldName": "* Full name",
+    "fieldAddress": "* Postal address (for the official invitation)",
+    "fieldCityAddress": "City",
+    "fieldPostcodeAddress": "Postcode",
+    "fieldAttendanceYes": "Yes I will be there",
+    "fieldAttendanceNo": "I can't make it",
+    "fieldAllergies": "Do you have any allergies or dietary preferences?",
+    "fieldMusic": "Any song request?",
+    "confirm": "Submit"
+  },
+  "plusOne": {
+    "header": "What about your Plus-One?",
+    "headerEdit": "Additional info on your Plus-One",
+    "guestName": "Guest Full Name",
+    "guestAllergies": "Does your guest have allergies or dietary preferences?",
+    "title": "Do you have a Plus-One?",
+    "yes": "Yes"
+  },
+  "contactus": {
+    "title": "Get in touch",
+    "summary": "Do you have any questions? Get in touch with us by email ",
+    "email": "here.",
+    "bridesummary": "Bride summary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut gravida odio. Nulla eu tincidunt velit, ut eleifend mauris. Suspendisse iaculis vitae ipsum in luctus",
+    "groomsummary": "Groom summary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut gravida odio. Nulla eu tincidunt velit, ut eleifend mauris. Suspendisse iaculis vitae ipsum in luctus"
+  },
+  "gifts": {
+    "title": "Travel and Accommodation",
+    "paragraph": "Check back soon"
+  }
+}
