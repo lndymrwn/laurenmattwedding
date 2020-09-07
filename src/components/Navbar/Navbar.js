@@ -62,12 +62,12 @@ class NavbarView extends React.Component {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link  onClick={()=>history.push('/')}><i className="fas fa-home" />Home</Nav.Link>
-        <Nav.Link  onClick={()=>history.push('/travel')}><i className="fas fa-plane" />Travel</Nav.Link>
-        <Nav.Link  onClick={()=>history.push('/scheduleOfEvents')}><i className="fas fa-calendar" />Schedule of Events</Nav.Link>
-        <Nav.Link  onClick={()=>history.push('/registry')}><i className="fas fa-shopping-basket" />Registry</Nav.Link>
-        <Nav.Link  onClick={()=>history.push('/thingsToDo')}><i className="fas fa-utensils" />Things to do</Nav.Link>
-        <Nav.Link  onClick={()=>history.push('/contactUs')}><i className="fas fa-at" />Contact Us</Nav.Link>
+        <Nav.Link  onClick={()=>history.push('/')}>Home</Nav.Link>
+        <Nav.Link  onClick={()=>history.push('/travel')}>Travel</Nav.Link>
+        <Nav.Link  onClick={()=>history.push('/scheduleOfEvents')}>Schedule of Events</Nav.Link>
+        <Nav.Link  href="https://www.zola.com/registry/laurenandmatthewnovember7" target="_blank">Registry</Nav.Link>
+        <Nav.Link  onClick={()=>history.push('/thingsToDo')}>Things to Do</Nav.Link>
+        <Nav.Link  onClick={()=>history.push('/contactUs')}>Contact Us</Nav.Link>
       </Nav>
       </Navbar.Collapse>
     </Navbar>

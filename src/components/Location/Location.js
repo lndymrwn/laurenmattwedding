@@ -19,8 +19,8 @@ class Location extends React.Component {
         <h3 style={{textAlign: 'center', fontSize:'1.8rem'}}>Taxi or Uber</h3>
         <p>Taxis can be purchased at the airport kiosk and are about $85 each way.</p>
         <h3 style={{textAlign: 'center', fontSize:'1.8rem'}}>Private Transportation</h3>
-        <p>f you prefer to have your transportation scheduled in advance, we recommend hiring a car/van service.  These rates are only slightly more than a taxi, with round trip tickets starting at $175 per vehicle.</p>
-        <a style={{textAlign: 'center', display: 'block'}}href="https://www.cancunairporttransportations.com/?idaff=1022&gclid=EAIaIQobChMI7NeI-ISF6AIVEJ-fCh1bqgUYEAAYAyAAEgKsOvD_BwE"  target="_blank">Cancun Airport Transportation</a>
+        <p>If you prefer to have your transportation scheduled in advance, we recommend hiring a car/van service.  These rates are only slightly more than a taxi, with round trip tickets starting at $175 per vehicle.</p>
+        <a style={{textAlign: 'center', display: 'block', color: 'rgb(108, 123, 104)'}}href="https://www.cancunairporttransportations.com/?idaff=1022&gclid=EAIaIQobChMI7NeI-ISF6AIVEJ-fCh1bqgUYEAAYAyAAEgKsOvD_BwE"  target="_blank">Cancun Airport Transportation</a>
         <br/>
         <br/>
         <br/>

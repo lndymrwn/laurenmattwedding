@@ -7,19 +7,15 @@ class AboutUs extends React.Component {
     return (
       <div className="section" id="aboutUs">
         <h2 className="contactus">
-          {this.props.t("contactus.title", {
-            framework: "react-i18next"
-          })}
+          Get in touch
+
         </h2>
         <p className="moreinfo">
-          {this.props.t("contactus.summary", {
-            framework: "react-i18next"
-          })}{" "}
+        Do you have any questions? Get in touch with us by email
           <span>
-            <a href="mailto:laurenperkey@gmail.com">
-              {this.props.t("contactus.email", {
-                framework: "react-i18next"
-              })}
+            <a style={{ color: 'rgb(108, 123, 104)' }} href="mailto:laurenperkey@gmail.com">
+              <span> </span>
+             here.
             </a>
           </span>
         </p>

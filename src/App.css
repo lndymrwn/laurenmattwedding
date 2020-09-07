@@ -1,13 +1,18 @@
 html {
   font: normal 16px;
   color: var(--darkgrey);
-  background-color: var(--pearlgrey);
+  background-color: var(--lightgreen);
   --pink: rgb(237, 190, 173);
   --palepink: rgb(244, 223, 207);
   --darkgrey: rgb(94, 96, 97);
   --lightgreen: rgb(241, 242, 214);
   --olivegreen: rgb(108, 123, 104);
   --pearlgrey: rgb(235, 234, 233);
+}
+
+body {
+
+background: linear-gradient(0deg, rgba(241,242,214,0.8869922969187675) 38%, rgba(248,249,226,1) 100%) !important;
 }
 
 p,
@@ -64,6 +69,8 @@ a:hover {
 .section h2 {
   text-transform: capitalize;
   text-align: center;
+  font-size: 4em;
+  font-weight: bold;
 }
 
 #loading,

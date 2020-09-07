@@ -127,14 +127,10 @@ class Hero extends React.Component {
           <div id="tagline">
             <h1 style={{fontSize: 72}}>Lauren + Matthew</h1>
             <h3>
-              {this.props.t("hero.weddingwebsite", {
-                framework: "react-i18next"
-              })}
+              November 7th 2020
             </h3>
             <h3>
-              {this.props.t("hero.locationwedding", {
-                framework: "react-i18next"
-              })}
+              Tulum, MX
             </h3>
             <div onClick={()=>this.setState({showRsvpModal: true})} className="myButton">RSVP</div>
           </div>

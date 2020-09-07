@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Card } from "react-bootstrap";
+import {Card, ButtonGroup, ToggleButton } from "react-bootstrap";
 import axios from 'axios';
 
 class GuestCard extends Component {
@@ -19,8 +19,8 @@ class GuestCard extends Component {
     }
   }
 
-  handleCheckBoxChange = (e, field) => {
-    this.setState({[field]: e.target.checked ? "T" : "F"});
+  handleCheckBoxChange = (value, field) => {
+    this.setState({[field]: value});
   }
 
   handleChange = (e, field) => {
@@ -74,17 +74,63 @@ class GuestCard extends Component {
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Subtitle className="text-muted">Please mark the events you are attending:</Card.Subtitle>
-        <div>
+        <div className="my-2">
           <label className="checkBoxLabel"htmlFor={`rsvpWelcomeParty-${guestId}`}>Welcome Party</label>
-          <input onChange={(e) => this.handleCheckBoxChange(e, 'rsvpWelcomeParty')} checked={rsvpWelcomeParty === "T" ? true : false} className="checkBoxInput"type='checkbox' id={`rsvpWelcomeParty-${guestId}`}  name={`rsvpWelcomeParty-${guestId}`}></input>
+          <ButtonGroup toggle>
+          <ToggleButton
+                key={'rsvpWelcomePartyYes'}
+                type="radio"
+                variant="secondary"
+                name="rsvpWelcomePartyYes"
+                value={'T'}
+                checked={rsvpWelcomeParty === 'T'}
+                onChange={(e) => this.handleCheckBoxChange(e.currentTarget.value, 'rsvpWelcomeParty')}
+              >
+                Yes
+              </ToggleButton>
+              <ToggleButton
+                key={'rsvpWelcomePartyNo'}
+                type="radio"
+                variant="secondary"
+                name="rsvpWelcomePartyNo"
+                value={'F'}
+                checked={rsvpWelcomeParty === 'F'}
+                onChange={(e) => this.handleCheckBoxChange(e.currentTarget.value, 'rsvpWelcomeParty')}
+              >
+                No
+              </ToggleButton>
+          </ButtonGroup>
         </div>
-        <div>
+        <div className="my-2">
           <label className="checkBoxLabel" htmlFor={`rsvpWedding-${guestId}`}>Wedding</label>
-          <input onChange={(e) => this.handleCheckBoxChange(e, 'rsvpWedding')} checked={rsvpWedding === "T" ? true : false}className="checkBoxInput"type='checkbox' id={`rsvpWedding-${guestId}`}  name={`rsvpWedding-${guestId}`}></input>
+          <ButtonGroup toggle>
+          <ToggleButton
+                key={'rsvpWeddingYes'}
+                type="radio"
+                variant="secondary"
+                name="rsvpWedding"
+                value={'T'}
+                checked={rsvpWedding === 'T'}
+                onChange={(e) => this.handleCheckBoxChange(e.currentTarget.value, 'rsvpWedding')}
+              >
+                Yes
+              </ToggleButton>
+              <ToggleButton
+                key={'rsvpWeddingNo'}
+                type="radio"
+                variant="secondary"
+                name="rsvpWeddingNo"
+                value={'F'}
+                checked={rsvpWedding === 'F'}
+                onChange={(e) => this.handleCheckBoxChange(e.currentTarget.value, 'rsvpWedding')}
+              >
+                No
+              </ToggleButton>
+          </ButtonGroup>
         </div>
         <br/>
         <Card.Subtitle className="text-muted">Please provide us with some additional information:</Card.Subtitle>
-        <div>
+        <div className="my-2">
           <label className="checkBoxLabel" htmlFor={`email-${guestId}`}>Email:</label>
           <input onChange={(e) => this.handleChange(e, 'email')} type="text" value={email === 'null' ? "" : email}/>
         </div>
@@ -93,7 +139,7 @@ class GuestCard extends Component {
           <input  onChange={(e) => this.handleChange(e, 'foodRestriction')} value={foodRestriction === 'null' ? "" : foodRestriction} type="text"/>
         </div>
         <div>
-          <label className="checkBoxLabel" htmlFor={`songRequest-${guestId}`}>Song requests:</label>
+          <label className="checkBoxLabel" htmlFor={`songRequest-${guestId}`}>Song Requests:</label>
           <input onChange={(e) => this.handleChange(e, 'songRequest')} value={songRequest === 'null' ? "" : songRequest} type="text"/>
         </div>
         <div style={{float: 'right'}} onClick={this.handleSave} className="modalButton">{!isSaving ? 'Save' : 'Saving...'}</div>

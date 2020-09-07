@@ -27,6 +27,16 @@ class Table extends React.Component {
       })
   }
 
+  mapRsvp = (rsvp) => {
+    if(rsvp === 'F') {
+      return 'NO';
+    } else if (rsvp === 'T') {
+      return 'YES';
+    } else {
+      return '';
+    }
+  }
+
 
 
   render() {
@@ -111,8 +121,8 @@ class Table extends React.Component {
         email: element.email === "null" ? '' : element.email,
         foodRestriction: element.foodRestriction === "null" ? '' : element.foodRestriction,
         name: element.name,
-        rsvpWedding: element.rsvpWedding === "F" ? 'NO' : 'YES',
-        rsvpWelcomeParty: element.rsvpWelcomeParty === "F" ? 'NO' : 'YES',
+        rsvpWedding: this.mapRsvp(element.rsvpWedding),
+        rsvpWelcomeParty: this.mapRsvp(element.rsvpWelcomeParty),
         songRequest: element.songRequest === "null" ? '' : element.songRequest,
         familyId: element.familyId,
       }

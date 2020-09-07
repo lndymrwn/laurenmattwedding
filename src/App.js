@@ -12,27 +12,12 @@ import { translate } from "react-i18next";
 
 //connecting to the database
 import initialData from "./components/loadDatabase";
-import base from "./base";
 
 class App extends Component {
   state = {
     RSVPs: {}
   };
 
-  componentDidMount() {
-    const { params } = this.props.match;
-    //sostituire il path per la submission su firebase con lo username
-    this.ref = base.syncState(`${params.userId}`, {
-      context: this,
-      state: "RSVPs"
-    });
-    // this.authListener();
-  }
-
-  //unlistening to changes once the user goes back to the previous page
-  componentWillUnmount() {
-    base.removeBinding(this.ref);
-  }
 
   addRSVP = RSVP => {
     //take a copy of the existing state using an object spread

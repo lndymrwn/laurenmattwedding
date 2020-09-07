@@ -5,6 +5,7 @@ import Routes from "./components/Routes";
 import * as serviceWorker from "./serviceWorker";
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
+import "animate.css/animate.min.css";
 
 i18next.init({
   interpolation: { escapeValue: false } // React already does escaping
